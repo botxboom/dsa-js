@@ -105,3 +105,12 @@ var groupAnagrams = function (strs) {
 
   return Array.from(myMap.keys());
 };
+
+var kFrequentElements = (nums, k) => {
+  let hash = {}
+  for(let i=0; i<nums.length; i++){
+    hash[nums[i]] = hash[nums[i]] ? ++hash[nums[i]] : 1
+  }
+
+  console.log(hash)
+}
